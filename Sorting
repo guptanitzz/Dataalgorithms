@@ -38,3 +38,71 @@ if __name__ == '__main__':
  #Best case O(n^2)
  #Worst case O(n^2)
  #Average Case O(n^2)
+
+
+#Insertion sorting
+# It is a simple Sorting algorithm which sorts the array by shifting elements one by one.
+# It has one of the simplest implementation
+# It is efficient for smaller data sets, but very inefficient for larger lists.
+# Insertion Sort is adaptive, that means it reduces its total number of steps if given a partially sorted list, hence it increases its efficiency.
+# It is better than Selection Sort and Bubble Sort algorithms.
+# Its space complexity is less. Like Bubble Sorting, insertion sort also requires a single additional memory space.
+# It is a Stable sorting, as it does not change the relative order of elements with equal keys
+# Pick second key and compare from left and insert to its suitable place
+
+
+def InsertionSort(ls_insert):
+  for i in range(1,len(ls_insert)):
+      temp=0
+      for j in range(0,i):
+          if ls_insert[i]<ls_insert[j]:
+              temp=ls_insert[i]
+              ls_insert.pop(i)
+              ls_insert.insert(j,temp)
+              continue
+    #print(ls_insert)
+    return ls_insert
+
+if __name__ == '__main__':
+    ls_insert=[8,1,3,1,5,2,3,4,5,2]
+    ls=InsertionSort(ls_insert)
+    print(ls)
+ 
+        
+ ###Time Complexity
+ 
+ #Best case O()
+ #Worst case O()
+ #Average Case O()
+
+
+#Selection sorting
+# Selection sorting is conceptually the most simplest sorting algorithm.
+# This algorithm first finds the smallest element in the array and exchanges 
+# it with the element in the first position, then find the second smallest element 
+# and exchange it with the element in the second position, and continues in this way 
+# until the entire array is sorted.
+
+def SelectSort(ls_sel):
+  for i in range(0,len(ls_sel)-1):
+      min_val=i
+      for j in range(i+1,len(ls_sel)):
+          if(ls_sel[j]<ls_sel[min_val]):
+              min_val=j
+              #print(min_val)
+      temp=ls_sel[i]
+      ls_sel[i]=ls_sel[min_val]
+      ls_sel[min_val]=temp
+      #print(ls_sel)
+
+if __name__ == '__main__':
+    ls=[8,1,3,1,5,2,3,4,5,2]
+    ls=SelectSort(ls)
+    print(ls)
+ 
+        
+ ###Time Complexity
+ 
+ #Best case O()
+ #Worst case O()
+ #Average Case O()
