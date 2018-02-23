@@ -1,0 +1,40 @@
+import pandas as pd
+import numpy as np
+import random
+
+#Bubble Sort 
+
+# Bubble Sort is an algorithm which is used to sort N elements that are given in a memory
+# for eg: an Array with N number of elements. Bubble Sort compares all the element one by 
+# one and sort them based on their values
+
+def BubbleSort(ls):
+  for i in range(0,len(ls)):
+      #print(i)
+      flag=0
+      for j in range(0,len(ls)-i-1):
+          #print(j)
+          t=0
+          #print(ls)
+          if ls[j+1]<ls[j]:
+              t=ls[j]
+              ls[j]=ls[j+1]
+              ls[j+1]=t
+              flag=1
+          #print(ls)
+      if(flag==0):
+          break
+  return ls
+  
+  
+if __name__ == '__main__':
+    ls=[5,1,6,2,4,3]
+    ls=BubbleSort(ls)
+    print(ls)
+ 
+        
+ ###Time Complexity
+ 
+ #Best case O(n^2)
+ #Worst case O(n^2)
+ #Average Case O(n^2)
