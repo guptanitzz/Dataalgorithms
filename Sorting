@@ -3,10 +3,8 @@ import numpy as np
 import random
 
 #Bubble Sort 
-
 # Bubble Sort is an algorithm which is used to sort N elements that are given in a memory
-# for eg: an Array with N number of elements. Bubble Sort compares all the element one by 
-# one and sort them based on their values
+# an Array with N number of elements. Bubble Sort compares all the element one by one and sort them based on their values
 
 def BubbleSort(ls):
   for i in range(0,len(ls)):
@@ -38,7 +36,8 @@ def BubbleSort(ls):
 # It is a simple Sorting algorithm which sorts the array by shifting elements one by one.
 # It has one of the simplest implementation
 # It is efficient for smaller data sets, but very inefficient for larger lists.
-# Insertion Sort is adaptive, that means it reduces its total number of steps if given a partially sorted list, hence it increases its efficiency.
+# Insertion Sort is adaptive, that means it reduces its total number of steps if given a partially sorted list, 
+# hence it increases its efficiency.
 # It is better than Selection Sort and Bubble Sort algorithms. number of comparisons is less
 # Its space complexity is less. Like Bubble Sorting, insertion sort also requires a single additional memory space.
 # It is a Stable sorting, as it does not change the relative order of elements with equal keys
@@ -91,11 +90,9 @@ def SelectSort(ls_sel):
 
 #Merge Sort
 # Merge Sort follows the rule of Divide and Conquer. Stable sorting.
-#In merge sort the unsorted list is divided into N sublists, 
-#each having one element, because a list consisting of one element is always sorted. 
-#Then, it repeatedly merges these sublists, to produce new sorted sublists, 
-#and in the end, only one sorted list is produced.
-#Merge Sort is quite fast, and has a time complexity of O(n log n)
+#In merge sort the unsorted list is divided into N sublists, each having one element, because a list consisting of one element is always sorted. 
+#Then, it repeatedly merges these sublists, to produce new sorted sublists, and in the end, only one sorted list is produced.
+#Merge Sort is quite fast, and its not inplace sorting algo.
 
 def MergeSort(alist):
   if len(alist)>1:
@@ -138,6 +135,62 @@ def MergeSort(alist):
 #                 O(n)- Best case
 
 
+#Quick Sort Algorithm
+# Quick Sort,sorts any list very quickly. It is insort algorithm
+# Quick sort is not a stable search, but it is very fast and requires veryless additional space.
+# It is based on the rule of Divide and Conquer(also called partition-exchange sort). 
+# Randomly choose pivot, divide list in 2 left less than pivot right greater than pivot,repeat the same steps
+
+def quickSort(alist):
+   quickSortinner(alist,0,len(alist)-1)
+   return alist
+
+def quickSortinner(alist,first,last):
+   if first<last:
+       splitpoint = partition(alist,first,last)
+
+       quickSortinner(alist,first,splitpoint-1)
+       quickSortinner(alist,splitpoint+1,last)
+
+def partition(alist,first,last):
+   pivotvalue = alist[first]
+
+   left_in = first+1
+   right_in = last
+
+   done = False
+   while not done:
+
+       while left_in <= right_in and alist[left_in] <= pivotvalue:
+           left_in = left_in + 1
+
+       while alist[right_in] >= pivotvalue and right_in >= leftmark:
+           right_in = right_in -1
+
+       if right_in < left_in:
+           done = True
+       else:
+           temp = alist[left_in]
+           alist[left_in] = alist[right_in]
+           alist[right_in] = temp
+
+   temp = alist[first]
+   alist[first] = alist[right_in]
+   alist[right_in] = temp
+   
+   return right_in
+   
+   
+#Time Complexity
+#Best case O()
+#Worst case O(n^2)
+#Average Case O(nlogn) - 
+#Space Complexity O(logn) -Average case
+#                 O(n)    -Worst case               
+
+
+
+
 
 if __name__ == '__main__':
     ls=[8,1,3,1,5,2,3,4,5,2]
@@ -153,5 +206,8 @@ if __name__ == '__main__':
     
     ls_mer=MergeSort(ls)
     print(ls_mer)
+    
+    ls_qui=QuickSort(ls)
+    print(ls_qui)
  
 
