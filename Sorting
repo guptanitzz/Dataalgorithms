@@ -31,7 +31,7 @@ def BubbleSort(ls):
  
  #Best case O(n^2)
  #Worst case O(n^2)
- #Average Case O(n^2)
+ #Average Case O(n) (If already sorted array os passed)
 
 
 #Insertion sorting
@@ -39,7 +39,7 @@ def BubbleSort(ls):
 # It has one of the simplest implementation
 # It is efficient for smaller data sets, but very inefficient for larger lists.
 # Insertion Sort is adaptive, that means it reduces its total number of steps if given a partially sorted list, hence it increases its efficiency.
-# It is better than Selection Sort and Bubble Sort algorithms.
+# It is better than Selection Sort and Bubble Sort algorithms. number of comparisons is less
 # Its space complexity is less. Like Bubble Sorting, insertion sort also requires a single additional memory space.
 # It is a Stable sorting, as it does not change the relative order of elements with equal keys
 # Pick second key and compare from left and insert to its suitable place
@@ -59,9 +59,9 @@ def InsertionSort(ls_insert):
 
  ###Time Complexity
  
- #Best case O()
- #Worst case O()
- #Average Case O()
+ #Best case O(n) input is sorted array
+ #Worst case O(n^2) when input is reversed sorted
+ #Average Case O(n^2)
 
 
 #Selection sorting
@@ -86,7 +86,7 @@ def SelectSort(ls_sel):
  ###Time Complexity
  
  #Best case O()
- #Worst case O()
+ #Worst case O(n^2)
  #Average Case O()
 
 if __name__ == '__main__':
