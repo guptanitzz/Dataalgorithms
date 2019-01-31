@@ -7,8 +7,8 @@
 # Stack
 # Trees
 
-class Array(object):
-    '''
+class Array:
+    """
     # Data Structure used to store homogeneous elements . Size has to be defined before hand
     Time complexity:
 
@@ -17,7 +17,8 @@ class Array(object):
     Delete: O(n)
     Indexing: O(1)
     YOu can import array library in python to get the similar functions
-    '''
+    """
+
     def __init__(self, arr_size, arr_type):
 
         self.Array_size = len(list(map(arr_type, range(arr_size))))
@@ -31,7 +32,6 @@ class Array(object):
     # return length of array
     def __len__(self):
         return len(self.Array_Items)
-
 
     # Enable indexing
     def __setitem__(self, index, value):
@@ -69,12 +69,12 @@ if __name__ == '__main__':
     # Check array class
     a = Array(10, int)
     print(a)
-    a.insert(8,1)
+    a.insert(8, 1)
     print(a)
-    a.insert(7,1)
+    a.insert(7, 1)
     print(a)
     print(a.search(7))
     print(len(a))
     print(a[2])
-    a[5]=9
+    a[5] = 9
     print(a)
