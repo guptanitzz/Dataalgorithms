@@ -54,6 +54,7 @@ class LinkedList:
     # print values in linked list
     def printlinkedlist(self):
         tmp = self.head
+        # print("chk tmp",tmp.val)
         while (tmp):
             print(tmp.val, end=" ")
             tmp = tmp.next
@@ -65,7 +66,7 @@ class LinkedList:
         newnode.next = self.head
         self.head = newnode
 
-    # inserting the node in between the linked list
+    # inserting the node after the given node in list
     def insertbetween(self, previousnode, data):
         if previousnode.next is None:
             print('Previous node should not be last node')
@@ -75,7 +76,7 @@ class LinkedList:
             previousnode.next = newNode
 
     # inserting at the end of linked list
-    def insertAtEnd(self, data):
+    def insertatend(self, data):
         newNode = Node(data)
         temp = self.head
         while temp.next != None:  # get last node
@@ -83,7 +84,7 @@ class LinkedList:
         temp.next = newNode
 
     # deleting an item based on data(or key)
-    def delete(self, val):
+    def deletebyval(self, val):
         temp = self.head
         # if data/key is found in head node itself
         if temp.next is not None:
@@ -106,6 +107,44 @@ class LinkedList:
                 prev.next = temp.next
                 return
 
+    # Given a reference to the head of a list
+    # and a position, delete the node at a given position
+    def deletebyposition(self, position):
+
+        # If linked list is empty
+        if self.head == None:
+            return
+
+        # Store head node
+        temp = self.head
+
+        # If head needs to be removed
+        if position == 0:
+            self.head = temp.next
+            temp = None
+            return
+
+        # Find previous node of the node to be deleted
+        for i in range(position - 1):
+            temp = temp.next
+            if temp is None:
+                break
+
+        # If position is more than number of nodes
+        if temp is None:
+            return
+        if temp.next is None:
+            return
+
+        # Node temp.next is the node to be deleted
+        # store pointer to the next of node to be deleted
+        next = temp.next.next
+
+        # Unlink the node from linked list
+        temp.next = None
+
+        temp.next = next
+
     # iterative search
     def search(self, node, val):
         # print('node',node)
@@ -120,9 +159,9 @@ class LinkedList:
 if __name__ == '__main__':
     # Check array class
     List = LinkedList()
-    List.printlinkedlist()
+    # List.printlinkedlist()
     print("chk1")
-    List.head = Node(1)  # create the head node
+    List.head = Node(2)  # create the head node
     List.printlinkedlist()
     print("chk2")
     node2 = Node(2)
@@ -131,10 +170,10 @@ if __name__ == '__main__':
     node2.setpointer(node3)  # node2's next --> node3
     List.insertatstart(4)  # node4's next --> head-node --> node2 --> node3
     List.insertbetween(node2, 5)  # node2's next --> node5
-    List.insertAtEnd(6)
+    List.insertatend(6)
     List.printlinkedlist()
     print()
-    List.delete(3)
+    List.deletebyval(3)
     List.printlinkedlist()
     print()
     print(List.search(List.head, 1))
