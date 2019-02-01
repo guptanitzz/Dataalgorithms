@@ -126,7 +126,7 @@ class LinkedList:
     def deletebyposition(self, position):
 
         # If linked list is empty
-        if self.head is None:
+        if self.head is None or position is None:
             return
 
         # Store head node
@@ -170,9 +170,11 @@ class LinkedList:
             return True
         return self.search(node.next, val)
 
+    def isempty(self):
+        return self.head is None
+
 
 if __name__ == '__main__':
-    # Check array class
     List = LinkedList()
     List.printlinkedlist()
     List.insertatstart(1)
