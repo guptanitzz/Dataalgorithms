@@ -83,27 +83,50 @@ class Stack:
 
 
 # parantheis checker
-
 def balancedparanthesis(paraString):
     s = Stack()
     balanced = True
     index = 0
     while index < len(paraString) and balanced:
         symbol = paraString[index]
-        if symbol == "(":
+        if symbol in "([{":
             s.push(symbol)
         else:
             if s.isempty():
                 balanced = False
             else:
-                s.pop()
-
+                top = s.pop()
+                if not matches(top, symbol):
+                    balanced = False
         index = index + 1
-
     if balanced and s.isempty():
         return True
     else:
         return False
+
+
+def matches(open, close):
+    opens = "([{"
+    closers = ")]}"
+    return opens.index(open) == closers.index(close)
+
+
+# Decimal to base conversion (2 to 16) using stacks
+def decimaltobase(number,base):
+
+    digits = "0123456789ABCDEF"
+    s = Stack()
+
+    while number > 0:
+        rem = number % base
+        s.push(rem)
+        number = number // base
+
+    converted = ""
+    while not s.isempty():
+        converted = converted + digits[s.pop()]
+
+    return converted
 
 
 if __name__ == '__main__':
@@ -122,3 +145,4 @@ if __name__ == '__main__':
 
     print(balancedparanthesis('((()))'))
     print(balancedparanthesis('(()'))
+    print(decimaltobase(233,2))
