@@ -9,6 +9,17 @@
 # Searching
 # Stack
 # Trees
+import operator
+from pythonds.basic.stack import Stack
+
+OPERATORS = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+    '/': operator.truediv
+}
+LEFT_Bracket = '('
+RIGHT_Bracket = ')'
 
 class TreeNode:
 
@@ -19,17 +30,19 @@ class TreeNode:
 
     def insertleft(self, child):
         if self.left is None:
-            self.left = child
+            self.left = TreeNode(child)
         else:
-            child.left = self.left
-            self.left = child
+            t=TreeNode(child)
+            t.left = self.left
+            self.left = t
 
     def insertright(self, child):
         if self.right is None:
-            self.right = child
+            self.right = TreeNode(child)
         else:
-            child.right = self.right
-            self.right = child
+            t=TreeNode(child)
+            t.right = self.right
+            self.right = t
 
     def getleft(self):
         return self.left
@@ -42,6 +55,9 @@ class TreeNode:
 
     def getvalue(self):
         return self.value
+
+
+
 
 
 # Tree traversals
@@ -87,18 +103,58 @@ def postorder(Tree):
         print(Tree.getvalue(), end=' ')
     return
 
+def parsetree(expression):
+    inittr = TreeNode(None)
+    # print(tr)
+    pStack = Stack()
+    pStack.push(inittr)
+    tr = inittr
+
+    for val in expression.split():
+        print(val)
+        if val == LEFT_Bracket:
+            tr.insertleft('')
+            pStack.push(tr)
+            tr = tr.getleft()
+        elif val in OPERATORS:
+            tr.setvalue(val)
+            tr.insertright('')
+            pStack.push(tr)
+            tr = tr.getright()
+        elif val == RIGHT_Bracket:
+            tr = pStack.pop()
+        else:
+            tr.setvalue(int(val))
+            parent = pStack.pop()
+            tr = parent
+        # print(preorder(tr))
+        # print(pStack)
+    return inittr
+
+def evaluate(parseTree):
+
+    leftC = parseTree.getleft()
+    rightC = parseTree.getright()
+
+    if leftC and rightC:
+        fn = OPERATORS[parseTree.getvalue()]
+        return fn(evaluate(leftC),evaluate(rightC))
+    else:
+        return parseTree.getvalue()
+
+
 
 if __name__ == '__main__':
     root = TreeNode('a')
     print(root.value)
     print(root.right)
 
-    root.insertleft(TreeNode('b'))
-    root.insertleft(TreeNode('c'))
+    root.insertleft('b')
+    root.insertleft('c')
     print(root.left.left.value)
 
-    root.insertright(TreeNode('d'))
-    root.insertright(TreeNode('e'))
+    root.insertright('d')
+    root.insertright('e')
     print(root.right.right.value)
 
     print('Inorder  Traversal:')
@@ -107,3 +163,7 @@ if __name__ == '__main__':
     print(preorder(root))
     print('\nPostorder Traversal:')
     print(postorder(root))
+
+    pt = parsetree("( ( 10 + 5 ) * 3 ) ")
+    print(postorder(pt))  # defined and explained in the next section
+    print(evaluate(pt))
