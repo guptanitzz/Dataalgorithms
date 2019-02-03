@@ -63,7 +63,7 @@ class BinaryHeap:
             i = minchild
 
     def minchild(self, i):
-        
+
         if i * 2 + 1 > self.size:
             return i*2
         else:

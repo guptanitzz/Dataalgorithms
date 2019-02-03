@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b7d26f2-df54-4e73-88e1-0b7ca6d8b028" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoublyLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoublyLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SingleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/SingleLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trees.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,25 +24,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Sorting" value="1" />
-          <entry key="py" value="8" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="py" value="3847" />
+          <entry key="py" value="7519" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="3847" />
+          <entry key="Python" value="7519" />
         </counts>
       </usages-collector>
     </session>
@@ -52,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/Arrays.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding>
                 <marker date="1548944844201" expanded="true" signature="1015:1148" ph="..." />
                 <marker date="1548944844201" expanded="true" signature="1219:1505" ph="..." />
@@ -64,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SingleLinkedList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="158" column="32" lean-forward="true" selection-start-line="157" selection-start-column="4" selection-end-line="158" selection-end-column="32" />
+            <state relative-caret-position="2210">
+              <caret line="158" column="32" selection-start-line="157" selection-start-column="4" selection-end-line="158" selection-end-column="32" />
               <folding>
                 <marker date="1549036814534" expanded="true" signature="167:602" ph="..." />
                 <marker date="1549036814534" expanded="true" signature="1386:1621" ph="..." />
@@ -86,9 +87,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stacks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
+                <element signature="e#809#1202#1" />
                 <marker date="1549034131722" expanded="true" signature="1908:1966" ph="..." />
                 <marker date="1549034131722" expanded="true" signature="2003:2040" ph="..." />
                 <marker date="1549034131722" expanded="true" signature="2170:3547" ph="..." />
@@ -98,18 +100,59 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Graphs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <marker date="1549169278871" expanded="true" signature="245:661" ph="..." />
+                <marker date="1549169278871" expanded="true" signature="2310:2412" ph="..." />
+                <marker date="1549169278871" expanded="true" signature="3001:3007" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Trees.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+              <folding>
+                <element signature="e#233#248#0" expanded="true" />
+                <element signature="e#1748#1877#0" />
+                <marker date="1549204222728" expanded="true" signature="2375:3208" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Heap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+              <folding>
+                <marker date="1549204222334" expanded="true" signature="1013:1061" ph="..." />
+                <marker date="1549204222334" expanded="true" signature="2066:2269" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Queue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="297" column="13" selection-start-line="297" selection-start-column="13" selection-end-line="297" selection-end-column="13" />
+            <state relative-caret-position="179">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="7" />
               <folding>
                 <element signature="e#252#2507#0" />
                 <element signature="e#1771#2774#0" />
-                <element signature="e#4115#5129#0" />
-                <marker date="1549038695634" expanded="true" signature="2540:2582" ph="..." />
-                <marker date="1549038695634" expanded="true" signature="2663:2701" ph="..." />
-                <marker date="1549038695634" expanded="true" signature="5809:6050" ph="..." />
+                <element signature="e#2968#4666#0" />
+                <marker date="1549165752138" expanded="true" signature="2540:2582" ph="..." />
+                <marker date="1549165752138" expanded="true" signature="2663:2701" ph="..." />
+                <marker date="1549165752138" expanded="true" signature="5805:6046" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,6 +186,9 @@
         <option value="$PROJECT_DIR$/SingleLinkedList.py" />
         <option value="$PROJECT_DIR$/DoublyLinkedList.py" />
         <option value="$PROJECT_DIR$/Queue.py" />
+        <option value="$PROJECT_DIR$/Graphs.py" />
+        <option value="$PROJECT_DIR$/Heap.py" />
+        <option value="$PROJECT_DIR$/Trees.py" />
       </list>
     </option>
   </component>
@@ -211,8 +257,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Queue">
-    <configuration name="DoubleLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Heap">
+    <configuration name="Graphs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dataalgorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,7 +270,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Learning\General\codes\Dataalgorithms\DoublyLinkedList.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graphs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,7 +279,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DoublyLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Heap" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dataalgorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,7 +291,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoublyLinkedList.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Heap.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,27 +321,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SingleLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Dataalgorithms" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SingleLinkedList.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Stacks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Dataalgorithms" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -317,20 +342,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Trees" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Dataalgorithms" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trees.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.SingleLinkedList" />
-      <item itemvalue="Python.DoubleLinkedList" />
-      <item itemvalue="Python.DoublyLinkedList" />
       <item itemvalue="Python.Stacks" />
       <item itemvalue="Python.Queue" />
+      <item itemvalue="Python.Graphs" />
+      <item itemvalue="Python.Trees" />
+      <item itemvalue="Python.Heap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Heap" />
+        <item itemvalue="Python.Trees" />
+        <item itemvalue="Python.Graphs" />
         <item itemvalue="Python.Queue" />
         <item itemvalue="Python.Stacks" />
-        <item itemvalue="Python.DoublyLinkedList" />
-        <item itemvalue="Python.DoubleLinkedList" />
-        <item itemvalue="Python.SingleLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -369,7 +415,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.34295303" />
+      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.22684564" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -403,34 +449,10 @@
     <entry file="file://$PROJECT_DIR$/Arrays.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding>
             <marker date="1548944844201" expanded="true" signature="1015:1148" ph="..." />
             <marker date="1548944844201" expanded="true" signature="1219:1505" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stacks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="20" />
-          <folding>
-            <marker date="1549034131722" expanded="true" signature="1908:1966" ph="..." />
-            <marker date="1549034131722" expanded="true" signature="2003:2040" ph="..." />
-            <marker date="1549034131722" expanded="true" signature="2170:3547" ph="..." />
-            <marker date="1549034131722" expanded="true" signature="3308:3547" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingleLinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="158" column="32" lean-forward="true" selection-start-line="157" selection-start-column="4" selection-end-line="158" selection-end-column="32" />
-          <folding>
-            <marker date="1549036814534" expanded="true" signature="167:602" ph="..." />
-            <marker date="1549036814534" expanded="true" signature="1386:1621" ph="..." />
           </folding>
         </state>
       </provider>
@@ -442,17 +464,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Stacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#809#1202#1" />
+            <marker date="1549034131722" expanded="true" signature="1908:1966" ph="..." />
+            <marker date="1549034131722" expanded="true" signature="2003:2040" ph="..." />
+            <marker date="1549034131722" expanded="true" signature="2170:3547" ph="..." />
+            <marker date="1549034131722" expanded="true" signature="3308:3547" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graphs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <marker date="1549169278871" expanded="true" signature="245:661" ph="..." />
+            <marker date="1549169278871" expanded="true" signature="2310:2412" ph="..." />
+            <marker date="1549169278871" expanded="true" signature="3001:3007" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingleLinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2210">
+          <caret line="158" column="32" selection-start-line="157" selection-start-column="4" selection-end-line="158" selection-end-column="32" />
+          <folding>
+            <marker date="1549036814534" expanded="true" signature="167:602" ph="..." />
+            <marker date="1549036814534" expanded="true" signature="1386:1621" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Queue.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="297" column="13" selection-start-line="297" selection-start-column="13" selection-end-line="297" selection-end-column="13" />
+        <state relative-caret-position="179">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="7" />
           <folding>
             <element signature="e#252#2507#0" />
             <element signature="e#1771#2774#0" />
-            <element signature="e#4115#5129#0" />
-            <marker date="1549038695634" expanded="true" signature="2540:2582" ph="..." />
-            <marker date="1549038695634" expanded="true" signature="2663:2701" ph="..." />
-            <marker date="1549038695634" expanded="true" signature="5809:6050" ph="..." />
+            <element signature="e#2968#4666#0" />
+            <marker date="1549165752138" expanded="true" signature="2540:2582" ph="..." />
+            <marker date="1549165752138" expanded="true" signature="2663:2701" ph="..." />
+            <marker date="1549165752138" expanded="true" signature="5805:6046" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <marker date="1549204222334" expanded="true" signature="1013:1061" ph="..." />
+            <marker date="1549204222334" expanded="true" signature="2066:2269" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#233#248#0" expanded="true" />
+            <element signature="e#1748#1877#0" />
+            <marker date="1549204222728" expanded="true" signature="2375:3208" ph="..." />
           </folding>
         </state>
       </provider>

@@ -32,7 +32,7 @@ class TreeNode:
         if self.left is None:
             self.left = TreeNode(child)
         else:
-            t=TreeNode(child)
+            t = TreeNode(child)
             t.left = self.left
             self.left = t
 

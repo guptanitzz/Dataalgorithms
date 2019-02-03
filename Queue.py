@@ -111,8 +111,8 @@ class Deque:
 
 
 class Node:
-    def __init__(self, info, priority):
-        self.info = info
+    def __init__(self, val, priority):
+        self.val = val
         self.priority = priority
 
 class PriorityQueue:
@@ -137,7 +137,7 @@ class PriorityQueue:
     # print values in queue
     def show(self):
         for x in self.items:
-            print(str(x.info) + " - " + str(x.priority))
+            print(str(x.val) + " - " + str(x.priority))
 
     def insert(self, val):
         # if queue is empty

@@ -95,6 +95,7 @@ class Graph:
             self.addnode(Node(to_key))
         self.items[from_key].addconnection(self.items[to_key], weight)
 
+
     def getallnodes(self):
         return self.items.keys()
 
